@@ -12,13 +12,13 @@
 
 	spl_autoload_register($autoload);
 
-    define('BASE','http://192.168.0.107/Projects/Delivery/');
+    define('BASE','http://localhost/');
     define('BASE_UPLOADS',__DIR__.'/images/');
     define('BASE_PAINEL_UPLOADS',__DIR__.'/uploads/');
     define('HOST','localhost');
     define('USER','root');
     define('PASSWORD','');
-    define('DATABASE','delivery');
+    define('DATABASE','database');
 
 
     if(!isset($_SESSION['login'])){
