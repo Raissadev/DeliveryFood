@@ -29,7 +29,7 @@
                 <li class="marginDownSmall listCart">
                     <a href="<?php echo BASE ?>product?id=<?php echo $items['id'] ?>" class="w100 itemsFlex alignCenter">
                         <figure class="itemsFlex alignCenter">
-                            <img src="<?php echo BASE ?>images/<?php echo $items['image'] ?>" />
+                            <img src="<?php echo BASE ?>uploads/<?php echo $items['image'] ?>" />
                         </figure>
                         <div class="col w70">
                             <h3><?php echo $items['name']; ?></h3>
