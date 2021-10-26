@@ -42,16 +42,15 @@
             $starsFour = $starsFour->fetchAll();
             $starsFive = $starsFive->fetchAll();
 
-            if(!isset($idProduct)){
-                echo 'oi';
+            $calcOne = (5*count($starsFive) + 4*count($starsFour) +3*count($starsThree) +2*count($starsTwo) +1*count($starsOne));
+            $calcTwo = (count($starsFive) + count($starsFour) + count($starsThree) + count($starsThree) + count($starsTwo) + count($starsOne));
+
+            if($calcOne === 0 || $calcTwo === 0){
+                $calcOne = 1; $calcTwo = 1;
             }
-            if($starsFive == 0 || $starsFour == 0 || $starsThree == 0 || $starsTwo == 0 || $starsOne == 0){
-                echo '0';
-            }else{
-                $calcStars = (5*count($starsFive)+4*count($starsFour)+3*(count($starsThree)+2*count($starsTwo)+1*count($starsOne)) / (count($starsFive)+(count($starsFour)+(count($starsThree)+(count($starsThree)+(count($starsTwo)+(count($starsOne))))))));
-                echo $calcStars;
-            }
+            $calcStars = intdiv($calcOne, $calcTwo);
             
+            echo $calcStars;
         }
         
         public static function getAvaliation($id_product){
