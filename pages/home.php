@@ -1,3 +1,4 @@
+<?php \models\siteModel::countVisits();?>
 
 <section class="welcomeContainer marginDownBigger">
     <div class="wrap w90 center">
