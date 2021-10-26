@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 25-Out-2021 às 00:20
+-- Tempo de geração: 26-Out-2021 às 02:40
 -- Versão do servidor: 10.4.20-MariaDB
 -- versão do PHP: 8.0.9
 
@@ -150,10 +150,10 @@ CREATE TABLE `visits` (
 --
 
 INSERT INTO `visits` (`id`, `ip`, `day`) VALUES
-(0, '123.342.324', '2021-10-21'),
-(0, '635.983.238', '2021-10-24'),
-(0, '182.928.239', '2021-10-23'),
-(0, '897.219.213', '2021-10-22');
+(1, '123.342.324', '2021-10-21'),
+(2, '635.983.238', '2021-10-24'),
+(3, '182.928.239', '2021-10-23'),
+(4, '897.219.213', '2021-10-22');
 
 --
 -- Índices para tabelas despejadas
@@ -184,6 +184,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Índices para tabela `visits`
+--
+ALTER TABLE `visits`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de tabelas despejadas
 --
 
@@ -210,6 +216,12 @@ ALTER TABLE `ratings`
 --
 ALTER TABLE `users`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+
+--
+-- AUTO_INCREMENT de tabela `visits`
+--
+ALTER TABLE `visits`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
