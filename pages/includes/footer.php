@@ -1,6 +1,6 @@
 <div class="divisor"></div>
 <?php 
-    if($fileName != 'product.php'){
+    if($fileName != 'product.php' && $fileName != 'cart.php'){
 ?>
 <footer>
     <div class="wrap">
