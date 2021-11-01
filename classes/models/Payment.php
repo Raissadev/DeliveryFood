@@ -33,7 +33,6 @@
 
 
     public function post(){
-      echo $this->url;
       $url_format = $this->url.$this->endpoint;
       $key_format = ['api_key' => $this->key];
 
