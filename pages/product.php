@@ -1,4 +1,3 @@
-<style> footer{display:none} </style>
 <?php
     $food = \models\productModel::getFood();
     \models\shopModel::getAvaliation($_GET['id']);
@@ -57,7 +56,3 @@
         </form>
     </div>
 </section>
-
-<?php
-    include('includes/footer_cart.php');
-?>
