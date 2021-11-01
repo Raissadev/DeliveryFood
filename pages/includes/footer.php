@@ -1,4 +1,7 @@
 <div class="divisor"></div>
+<?php 
+    if($fileName != 'product.php'){
+?>
 <footer>
     <div class="wrap">
         <nav>
@@ -11,7 +14,19 @@
         </nav>
     </div>
 </footer>
-
+<?php } ?>
+<?php if($fileName == 'product.php'){ ?>
+<footer class="footerCart" style="display:block">
+    <div class="wrap">
+        <form class="w90 center itemsFlex alignCenter justCenter">
+            <a href="<?php echo BASE; ?>cart?addCart=<?php echo $food['id']; ?>" class=" button w100 itemsFlex alignCenter justCenter"><span>Adicionar ao Carrinho</span></a>
+        </form>
+    </div>
+</footer>
+<?php
+    \models\shopModel::addToCart($food['id']);
+?>
+<?php } ?>
 <script src="<?php echo BASE ?>js/scripts.js"></script>
 
 </body>   
