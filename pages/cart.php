@@ -1,4 +1,3 @@
-<style> footer{display:none} </style>
 <?php
     if(!isset($_SESSION['carrinho'])){
         echo "<script> alert('Você não possui items no carrinho'); </script>";
