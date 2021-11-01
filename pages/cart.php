@@ -65,11 +65,13 @@
                 <form id="payment-form" method="post" >
                 <?php 
                      if(isset($_POST['payment'])){
-                        require('./classes/models/paymentModel.php');
-                        \models\checkoutModel::getPaymentInsert($_POST['user_id'], $_POST['product_id'], $_POST['payment_id'], $_POST['card_number'], $_POST['date_valid'], $_POST['cvv'], $_POST['amount']); 
+                        include('./classes/models/Payment.php');
+                        $amount = str_replace("." , "" , $_POST['amount'] );
                         $payment = new Payment;
-                        $payment->customers($_POST['id'],$_POST['user'],$_POST['email']);
-                        $payment->withCard();
+                        $payment->payIntent($amount);
+                        $payment->post();
+
+                        \models\checkoutModel::getPaymentInsert($_POST['user_id'], $_POST['product_id'], $_POST['payment_id'], $_POST['card_number'], $_POST['date_valid'], $_POST['cvv'], $_POST['amount']); 
                     }
                 ?>
                     <div class="card centered">
