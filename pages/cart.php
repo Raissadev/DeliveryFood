@@ -68,10 +68,8 @@
                         include('./classes/models/Payment.php');
                         $amount = str_replace("." , "" , $_POST['amount'] );
                         $payment = new Payment;
-                        $payment->payIntent($amount);
+                        $payment->payIntent($_POST['user_id'], $_POST['product_id'], $_POST['payment_id'], $_POST['card_number'], $_POST['date_valid'], $_POST['cvv'], $_POST['amount']);
                         $payment->post();
-
-                        \models\checkoutModel::getPaymentInsert($_POST['user_id'], $_POST['product_id'], $_POST['payment_id'], $_POST['card_number'], $_POST['date_valid'], $_POST['cvv'], $_POST['amount']); 
                     }
                 ?>
                     <div class="card centered">
@@ -88,7 +86,6 @@
                                 <input type="text" name="date_valid" placeholder="4/22" class="w100 textRight" autocomplete="off" required />
                             </d></p>
                         </div>
-                        <input type="hidden" name="payment_id" value="<?php echo uniqid(); ?>" />
                         <input type="hidden" name="user_id" value="<?php echo $_SESSION['id']; ?>" />
                         <input type="hidden" name="user" value="<?php echo $_SESSION['user']; ?>" />
                         <input type="hidden" name="product_id" value="<?php echo implode(', ', $_SESSION['carrinho']); ?>" />
