@@ -1,16 +1,19 @@
-# DeliveryFood
-<h2>Sobre o Projeto</h2>
-<p>Delivery para entrega de comida, conectado com o dashboard. Possui algumas funcionalidades como: adicionar ao carrinho, localização entre outros... E no dashboard controle de todo o tráfego.  😊</p>
-<h3>Front-end:</h3>
+# Delivery Food
+<h3>Sobre o Projeto</h3>
+<p>Delivery para entrega de comida, conectado com o dashboard. Possui algumas funcionalidades como: adicionar ao carrinho, localização entre outros... E no dashboard controle de todo o tráfego.</p>
+
 <ul>
-  <li>HTML</li>
-  <li>CSS</li>
-  <li>JavaScript</li>
-</ul>
-<h3>Back-end:</h3>
-<ul>
-  <li>PHP</li>
-  <li>Database: MySql</li>
+  <li>Lenguages:</li>
+  <i>PHP, JavaScript e SQL</i>
+  
+  <li>Database:</li>
+  <i>MySql</i>
+  
+  <li>Style:</li>
+  <i>Cascading Style Sheets</i>
+  
+  <li>Markup Language:</li>
+  <i>HTML</i>
 </ul>
 
 ![part1](https://user-images.githubusercontent.com/82960240/138784318-1fa9c8f6-db65-4ee9-a1a2-2a9e969acfff.gif)
