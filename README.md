@@ -16,8 +16,9 @@
   <i>HTML</i>
 </ul>
 
-![part1](https://user-images.githubusercontent.com/82960240/138784318-1fa9c8f6-db65-4ee9-a1a2-2a9e969acfff.gif)
-![part2](https://user-images.githubusercontent.com/82960240/138784438-97c03105-ab04-42ac-84bf-234661d6d96a.gif)
+![gifClimate](https://user-images.githubusercontent.com/82960240/141594888-083b187a-8036-495d-8be5-18ebf1a5c6f4.gif)
+![gifClimate](https://user-images.githubusercontent.com/82960240/141594916-14f8893e-81c1-44ea-a1a3-14525fca4edd.gif)
+
 
 <hr />
 <h3>Autor</h3>
