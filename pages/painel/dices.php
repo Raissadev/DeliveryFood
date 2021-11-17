@@ -9,9 +9,9 @@
                 </div>
                 <div class="col w100 itemsFlex alignCenter">
                     <div class="chartBar w90 marginRightDefault">
-                        <span style="width: <?php $totalVisits = \models\siteModel::countVisits(); echo count($totalVisits); ?>%"></span>
+                        <span style="width: <?php $totalVisits = \controller\siteController::countVisits(); echo count($totalVisits); ?>%"></span>
                     </div>
-                    <p><?php $totalVisits = \models\siteModel::countVisits(); echo count($totalVisits); ?></p>
+                    <p><?php $totalVisits = \controller\siteController::countVisits(); echo count($totalVisits); ?></p>
                 </div>
             </div>
             <div class="box">

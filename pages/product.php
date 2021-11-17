@@ -1,6 +1,6 @@
 <?php
     $food = \models\productModel::getFood();
-    \models\shopModel::getAvaliation($_GET['id']);
+    \controller\shopController::getAvaliation($_GET['id']);
 ?>
 <section class="productContainer marginDownSmall">
     <div class="wrap w90 center">
@@ -56,3 +56,4 @@
         </form>
     </div>
 </section>
+

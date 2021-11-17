@@ -1,5 +1,5 @@
 <?php
-    \models\accessModel::logoutUser();
+    \controller\accessController::logoutUser();
 ?>
 
 <!DOCTYPE html>

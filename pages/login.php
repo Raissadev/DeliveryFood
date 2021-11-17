@@ -1,6 +1,6 @@
 <?php
-    \models\accessModel::checkLogin();
-    \models\accessModel::loginUser();
+    \controller\accessController::checkLogin();
+    \controller\accessController::loginUser();
 ?>
 
 <section class="containerAccess itemsFlex alignCenter">

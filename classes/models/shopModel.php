@@ -15,12 +15,6 @@
             return $sql->fetchAll();
         }
 
-        public static function addToCart($idFood){
-            if(!isset($_SESSION['carrinho'])){
-                $_SESSION['carrinho'] = array();
-            }
-            $_SESSION['carrinho'][] = $idFood;
-        }
         public static function getItemsCart(){
             return $_SESSION['carrinho'];
         }
@@ -51,19 +45,9 @@
             $calcStars = intdiv($calcOne, $calcTwo);
             
             echo $calcStars;
+            
         }
         
-        public static function getAvaliation($id_product){
-            if(isset($_POST['action'])){
-                $feedback = $_POST['feedback'];
-                $star = $_POST['star'];
-
-                $sql = \MySql::connect()->prepare("INSERT INTO `ratings` VALUES (null,?,?,?,?)");
-                $sql->execute(array($id_product,$star,$feedback,$_SESSION['id']));
-
-                echo '<script> location.href = location.href </script>';
-            }
-        }
     }
 
 ?>

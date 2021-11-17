@@ -1,5 +1,5 @@
 <?php
-    \models\adminModel::registerProduct();
+    \controller\adminController::registerProduct();
 ?>
 <section class="registerProductContainer marginDownSmall">
     <div class="wrap itemsFlex alignCenter justCenter w90 center">

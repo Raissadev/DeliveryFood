@@ -11,7 +11,6 @@
             }
         }
 
-
         public static function deliveryRequest(){
             $sql = \MySql::connect()->prepare("SELECT * FROM `payments`");
             $sql->execute();      

@@ -1,4 +1,4 @@
-<?php \models\siteModel::countVisits(); ?>
+<?php \controller\siteController::countVisits(); ?>
 
 <section class="contentWelcome marginDownMiddle">
     <div class="wrap w90 center">

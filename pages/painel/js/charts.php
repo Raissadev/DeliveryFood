@@ -115,7 +115,7 @@
     type: "radialBar",
   },
 
-  series: [<?php  $totalVisits = \models\siteModel::countVisits(); echo count($totalVisits); ?>],
+  series: [<?php  $totalVisits = \controller\siteController::countVisits(); echo count($totalVisits); ?>],
   colors: ["#20E647"],
   plotOptions: {
     radialBar: {
